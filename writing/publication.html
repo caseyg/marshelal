@@ -1,0 +1,25 @@
+{% capture content %}
+	<h1 class="content-title">Publications contributed to</h1>
+
+	<article>
+	{{body}}
+	</article>
+			<ul class="article-list">
+			{% for tag in site.pages.writing.taxonomy['publication'] %}
+			<li>
+			  <h2><a href="{{tag.url}}">{{ tag.value }}</a></h2>
+			  <ul>
+				  {% for post in tag.posts %}
+				    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+				  {% endfor %}
+			  </ul>
+			</li>
+			{% endfor %}
+			</ul>
+	{% if parent %}
+		<hr>
+		<p><a href="{{parent.url}}">&larr; Back to {{parent.title}}</a></p>
+	{% endif %}
+{% endcapture %}
+
+{% include "layouts/default" %}

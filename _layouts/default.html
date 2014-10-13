@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>{{site.title}} | {{title}}</title>
+  <link rel="alternate" type="application/rss+xml" href="{{site.feed_url}}" />
+  <link rel="stylesheet" type="text/css" href="/style.css" />
+</head>
+<body>
+    <header>
+      <h1 class="site-title"><a href="/">{{site.title}}</a></h1>
+      <nav>
+        <ul class="page-menu">
+        {% for page in site.pages %}
+          <li><a href="{{page.url}}"{% if page.url == url %} class="is-current-page"{% endif %}>{{page.title}}</a></li>
+        {% endfor %}
+        </ul>
+      </nav>
+    </header>
+    <section class="content">
+      {{content}}
+    </section><!-- /content -->
+  <script src="//use.typekit.net/hil2tmi.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>
