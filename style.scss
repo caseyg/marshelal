@@ -1,0 +1,29 @@
+// CoLoRs
+
+$background: #eee;
+$body: darken($background,70%);
+
+// sTyLeS
+
+body {
+	background:$background;
+	font-family: "Georgia", serif;
+	font-size:18px;
+	line-height:24px;
+	color: $body;
+}
+h1, h2, h3, h4, h5, h6, nav {
+	font-family: "oxtail", sans-serif;
+	font-weight: 900;
+	text-transform:lowercase;
+	a {
+		padding:.1em;
+		text-decoration: none;
+		color: lighten(#0f0f1c, 10%);
+	}
+}
+nav ul, nav ol {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
