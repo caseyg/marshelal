@@ -14,7 +14,10 @@
       {{body}}
 
       {% if type == "post" %}
+      <nav class="rslides_nav"></nav>
+      <ul class="rslides">
         {% for asset in assets %}
+        <li>
           <figure>
             {% if asset.type == 'image' %}
               <img src="{{asset.url}}">
@@ -23,7 +26,9 @@
               <figcaption>{{asset.meta['caption']}}</figcaption>
             {% endif %}
           </figure>
+        </li>
         {% endfor %}
+      </ul>
       </article>
 
       {% else %}
@@ -45,9 +50,20 @@
         </ul>
       {% endif %}
 
-      {% if parent %}
-        <p><a href="{{parent.url}}">&larr; Back to {{parent.title}}</a></p>
-      {% endif %}
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/ResponsiveSlides.js/1.53/responsiveslides.min.js"></script>
+<script>
+  $(function() {
+    $(".rslides").responsiveSlides({
+      nav: true,             // Boolean: Show navigation, true or false
+      pause: true,           // Boolean: Pause on hover, true or false
+      pauseControls: true,    // Boolean: Pause when hovering controls, true or false
+      navContainer: ".rslides_nav",    // Boolean: Pause when hovering controls, true or false
+      prevText: "&larr; Previous",   // String: Text for the "previous" button
+      nextText: "Next &rarr;",       // String: Text for the "next" button
+    });
+  });
+</script>
 {% endcapture %}
 
 {% include "layouts/default" %}

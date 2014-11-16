@@ -39,11 +39,6 @@
 		{% endfor %}
 		</ul>
 	{% endif %}
-
-	{% if parent %}
-		<hr>
-		<p><a href="{{parent.url}}">&larr; Back to {{parent.title}}</a></p>
-	{% endif %}
 {% endcapture %}
 
 {% include "layouts/default" %}
