@@ -55,7 +55,7 @@ header h1 {
   padding: 0;
   list-style-type: none; }
 
-nav a, .rslides_nav a {
+nav a, .rslides_nav a, figcaption {
   color: #bfbfbf !important; }
 
 nav ul, nav ol {
@@ -131,6 +131,7 @@ footer {
   position: relative;
   list-style: none;
   overflow: hidden;
+  clear: both;
   width: 100%;
   padding: 0;
   margin: 0; }
