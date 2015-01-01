@@ -22,7 +22,7 @@ header, nav, h1, .article-list {
 a {
 	padding:.1em;
 	text-decoration: none;
-	color: $accent;
+	color: gray;
 }
 a:hover, .is-current-page {
 	text-decoration: underline;
@@ -99,20 +99,23 @@ img {
 		padding-top:.25em;
 	}
 	li {
-		padding:1em 0;
 //		border-bottom:1px solid darken($background, 10%);
 	}
-	img {
+	.thumbnail {
+		display:block;
+		background-size:cover;
 		margin-bottom:.5em;
+		min-height:200px;
 	}
 	@media (min-width: 600px) {
 		&.grid {
 			li {
 				max-width:45%;
 				display:inline-block;
-			}
-			li:nth-child(odd) {
-				margin-right:7.5%;
+				.thumbnail {
+				width:300px;
+				height:300px;
+				}
 			}
 		}
 	}
@@ -120,6 +123,13 @@ img {
 article p {
 	max-width:650px;
 	margin:auto auto 1em auto;
+	font-family: "ff-tisa-sans-web-pro", sans-serif;
+	font-weight: 100;
+	font-size:.85em;
+}
+article p.lead {
+	font-size:1em;
+	font-family: "oxtail", Georgia, serif;
 }
 figure {
 	background:lighten($background, 2%);

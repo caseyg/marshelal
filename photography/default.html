@@ -40,7 +40,7 @@
                 <a href="{{post.url}}">
                 {% for asset in post.assets | limit:1 %}
                   {% if asset.type == 'image' %}
-                      <img src="{{asset.url}}">
+                      <p class="thumbnail" style="background-image:url('{{asset.url}}');">&nbsp;</p>
                       <h2>{{post.title}}</h2>
                   {% endif %}
                 {% endfor %}
