@@ -1,20 +1,4 @@
 {% capture content %}
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/ResponsiveSlides.js/1.53/responsiveslides.min.js"></script>
-<script>
-  $(function() {
-    $(".rslides").responsiveSlides({
-      nav: true,             // Boolean: Show navigation, true or false
-      pause: true,           // Boolean: Pause on hover, true or false
-      pauseControls: true,    // Boolean: Pause when hovering controls, true or false
-      navContainer: ".rslides_nav",    // Boolean: Pause when hovering controls, true or false
-      prevText: "&larr; Previous",   // String: Text for the "previous" button
-      nextText: "Next &rarr;",       // String: Text for the "next" button
-    });
-  });
-</script>
-
       <h1 class="content-title">{{title}}</h1>
 
       {% if pages %}
@@ -29,19 +13,15 @@
       {{body}}
 
       {% if type == "post" %}
-      <nav class="rslides_nav"></nav>
-      <ul class="rslides">
+      <ul class="gallery">
         {% for asset in assets %}
-        <li>
-          <figure>
             {% if asset.type == 'image' %}
-              <img src="{{asset.url}}">
+              <li>
+                <figure>
+                    <a href="{{asset.url}}"><img src="{{asset.url}}" width="200px"></a>
+                </figure>
+              </li>
             {% endif %}
-            {% if asset.meta['caption'] %}
-              <figcaption>{{asset.meta['caption']}}</figcaption>
-            {% endif %}
-          </figure>
-        </li>
         {% endfor %}
       </ul>
       </article>
@@ -51,7 +31,6 @@
         <ul class="article-list grid">
           {% for post in posts %}
             <li>
-              
                 <a href="{{post.url}}">
                 {% for asset in post.assets | limit:1 %}
                   {% if asset.type == 'image' %}
@@ -64,6 +43,16 @@
           {% endfor %}
         </ul>
       {% endif %}
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<link rel="stylesheet" href="http://marshelal.com/jquery.lightbox.css" />
+<script src="http://marshelal.com/jquery.lightbox.js"></script>
+<script>
+  // Initiate Lightbox
+  $(function() {
+    $('.gallery a').lightbox(); 
+  });
+</script>
 
 {% endcapture %}
 

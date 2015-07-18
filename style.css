@@ -127,37 +127,7 @@ hr {
 footer {
   margin-top: 3em; }
 
-.rslides {
-  position: relative;
-  list-style: none;
-  overflow: hidden;
-  clear: both;
-  width: 100%;
-  padding: 0;
-  margin: 0; }
-
-.rslides li {
-  -webkit-backface-visibility: hidden;
-  position: absolute;
-  display: none;
-  width: 100%;
-  left: 0;
-  top: 0; }
-
-.rslides li:first-child {
-  position: relative;
-  display: block;
-  float: left; }
-
-.rslides img {
-  display: block;
-  max-width: 100%;
-  border: 0;
-  margin: auto !important;
-  max-height: 90vh; }
-
-.rslides_nav .prev {
-  float: left; }
-
-.rslides_nav .next {
-  float: right; }
+.gallery li {
+  display: inline-block;
+  width: 200px;
+  vertical-align: middle; }
