@@ -18,7 +18,7 @@
             {% if asset.type == 'image' %}
               <li>
                 <figure>
-                    <a href="{{asset.url}}"><img src="{{asset.url}}" width="200px"></a>
+                    <a href="{{asset.url}}" data-caption="{{asset.meta['caption']}}"><img src="{{asset.url}}" width="200px"></a>
                 </figure>
               </li>
             {% endif %}
