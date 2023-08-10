@@ -1,0 +1,133 @@
+body {
+  background: white;
+  font-family: "oxtail", Georgia, serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: black;
+  max-width: 960px;
+  margin: auto;
+  padding: 1em; }
+
+header, nav, h1, .article-list {
+  text-align: center; }
+
+a {
+  padding: .1em;
+  text-decoration: none;
+  color: gray; }
+
+a:hover, .is-current-page {
+  text-decoration: underline; }
+
+h1, h2, h3, h4, h5, h6, nav, .metadata a {
+  font-family: "ff-tisa-sans-web-pro", sans-serif;
+  font-weight: 100;
+  line-height: 1.5em; }
+
+.metadata a {
+  font-style: normal !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.8em !important; }
+
+h2, h3, h4, h5, h6 {
+  font-weight: 900; }
+
+header h1 {
+  font-family: "oxtail", Georgia; }
+
+.content h1 {
+  font-style: normal !important;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1em !important;
+  font-weight: 500;
+  margin: 3em auto 2em auto; }
+
+.content h2 {
+  font-size: 1em; }
+
+.content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
+  text-align: center; }
+.content ul {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+
+nav a, .rslides_nav a, figcaption {
+  color: #bfbfbf !important; }
+
+nav ul, nav ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+  nav ul li, nav ol li {
+    display: inline-block;
+    padding: 0 .5em; }
+
+img {
+  max-width: 100%; }
+
+.metadata, .metadata a {
+  font-style: italic;
+  color: #bfbfbf;
+  font-size: .95em; }
+
+.article-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+  .article-list h2, .article-list p {
+    margin: 0;
+    padding: 0; }
+  .article-list p.metadata {
+    padding-top: .25em; }
+  .article-list .thumbnail {
+    display: block;
+    background-size: cover;
+    margin-bottom: .5em;
+    min-height: 200px; }
+  @media (min-width: 600px) {
+    .article-list.grid li {
+      max-width: 45%;
+      display: inline-block; }
+      .article-list.grid li .thumbnail {
+        width: 300px;
+        height: 300px; } }
+
+article p {
+  max-width: 650px;
+  margin: auto auto 1em auto;
+  font-family: "ff-tisa-sans-web-pro", sans-serif;
+  font-weight: 100;
+  font-size: .85em; }
+
+article p.lead {
+  font-size: 1em;
+  font-family: "oxtail", Georgia, serif; }
+
+figure {
+  background: white;
+  max-width: 100%;
+  margin: 1em 0;
+  padding: 1em;
+  text-align: center; }
+
+figcaption {
+  font-style: italic;
+  margin-top: .25em; }
+
+hr {
+  border: none;
+  border-top: 1px solid #bfbfbf;
+  max-width: 20em;
+  margin: 2em auto; }
+
+footer {
+  margin-top: 3em; }
+
+.gallery li {
+  display: inline-block;
+  width: 200px;
+  vertical-align: middle; }
