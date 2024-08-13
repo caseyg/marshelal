@@ -1,5 +1,5 @@
 ---
-time: 1698956986
+time: 1723570066
 inventory:
   "/about/index.html":
     md5: 92960d7487ea6c759d968be70e06369a
@@ -134,8 +134,8 @@ inventory:
     md5: f8c04cdb8521cd64b9b0a1d712bcb5da
     time: 1691671762
   "/bio/index.html":
-    md5: 7f4cc31f9e0a7a0abbfe07192467b779
-    time: 1691671762
+    md5: b30779a10bc8c749cd32b17ffb20f382
+    time: 1723570064
   "/press/index.html":
     md5: 7544172bfc03f7cafbac58872e78ce1a
     time: 1698956984
@@ -167,8 +167,8 @@ inventory:
     md5: 2bfd6906b0fae6c8af9d842bf2a6b062
     time: 1698956985
   "/feed.xml":
-    md5: 2a57013d148277127b54a8aebe251b8f
-    time: 1698956985
+    md5: 29ad8d460dcefa5f5ff3a65c9519139e
+    time: 1723570065
   "/assets/greeksaladinbakedpotato.jpg":
     md5: 9ec2675a9d3c29808d568e664267ce64
     time: 1691671763
