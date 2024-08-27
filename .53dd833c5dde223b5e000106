@@ -1,5 +1,5 @@
 ---
-time: 1724784866
+time: 1724784949
 inventory:
   "/about/index.html":
     md5: 92960d7487ea6c759d968be70e06369a
@@ -8,8 +8,8 @@ inventory:
     md5: 92960d7487ea6c759d968be70e06369a
     time: 1691671762
   "/writing/index.html":
-    md5: 3b6d2f01a9f59dc6a2b507083d5d555c
-    time: 1724784863
+    md5: 625d8a235a79e6bbe82f3688ea445ba3
+    time: 1724784946
   "/writing/the-middle-east-is-missing/index.html":
     md5: aad5b00cdecde3bf0466d3dc52cd8f3e
     time: 1691671762
@@ -164,11 +164,11 @@ inventory:
     md5: ab144f5b910e8a936f4f88f28f476efb
     time: 1691671763
   "/sitemap.xml":
-    md5: 09c34d70e447b7509f37ceca5459d346
-    time: 1724784865
+    md5: 5b47f1ac6d7ffb75ab8e2418dca63431
+    time: 1724784948
   "/feed.xml":
-    md5: 6acbe3ddaf36d325f56880ad23f0c140
-    time: 1724784865
+    md5: afe2ac24447f62b390d46f88ae5c3cbb
+    time: 1724784948
   "/assets/greeksaladinbakedpotato.jpg":
     md5: 9ec2675a9d3c29808d568e664267ce64
     time: 1691671763
